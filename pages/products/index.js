@@ -2,6 +2,7 @@ import Link from "next/link";
 import allProducts from "../data/products.json";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import Image from "next/image";
+import styles from "../../styles/products.module.css"
 
 export async function getStaticProps() {
   const client = new ApolloClient({
@@ -51,7 +52,7 @@ export default function Products({ allProducts }) {
             <div key={product.id}>
               <Link href={`products/${product.slug}`}>
                 <a>
-                  <div>
+                  <div className={styles.img_ctn}>
                     <Image
                       src={product.image.url}
                       alt={product.name}
