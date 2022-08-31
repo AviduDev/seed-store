@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import Image from "next/image";
+import styles from "../../styles/product.module.css"
 
 export async function getStaticPaths() {
   const client = new ApolloClient({
@@ -102,12 +103,13 @@ export default function productSlug({ product }) {
         <title>Product Single Page</title>
       </Head>
       <div>
-        <div>
+        <div className={styles.img_ctn}>
           <Image
             src={product.image.url}
             width={product.image.width}
             height={product.image.height}
             alt={product.name}
+            layout="fixed"
           />
         </div>
         <div>
