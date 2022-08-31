@@ -1,0 +1,74 @@
+[
+    {
+      "id": "alocasia-portodora",
+      "name": "Alocasia 'Portodora'",
+      "price": 31.73,
+      "image": {
+        "url":"https://res.cloudinary.com/avidu/image/upload/v1656003912/sample.jpg"
+      }
+    },
+    {
+      "id": "anthurium-andraeanum",
+      "name": "Anthurium andraeanum",
+      "price": 28.35,
+      "image": {
+       "url":"https://res.cloudinary.com/avidu/image/upload/v1656003912/sample.jpg"
+     }
+    },
+    {
+      "id": "cordyline-fruticosa",
+      "name": "Cordyline fruticosa",
+      "price": 31.05,
+      "image": {
+        "url": "https://res.cloudinary.com/avidu/image/upload/v1656003912/sample.jpg"
+      }
+    },
+    {
+      "id": "croton-variegatum",
+      "name": "Croton variegatum",
+      "price": 16.61,
+      "image": {
+        "url": "https://res.cloudinary.com/avidu/image/upload/v1656003912/sample.jpg"
+      }
+    },
+    {
+      "id": "dracaena-fragrans",
+      "name": "Dracaena fragrans",
+      "price": 28.35,
+      "image": {
+        "url": "https://res.cloudinary.com/avidu/image/upload/v1656003912/sample.jpg"
+      }
+    },
+    {
+      "id": "alocasia",
+      "name": "Alocasia",
+      "price": 42.5,
+      "image": {
+        "url": "https://res.cloudinary.com/avidu/image/upload/v1656003912/sample.jpg"
+      }
+    },
+    {
+      "id": "yucca",
+      "name": "Yucca",
+      "price": 14.01,
+      "image": {
+        "url": "https://res.cloudinary.com/avidu/image/upload/v1656003912/sample.jpg"
+      }
+    },
+    {
+      "id": "hoya-carnosa",
+      "name": "Hoya Carnosa",
+      "price": 25.65,
+      "image": {
+        "url": "https://res.cloudinary.com/avidu/image/upload/v1656003912/sample.jpg"
+      }
+    },
+    {
+      "id": "scindapsus",
+      "name": "Scindapsus",
+      "price": 16.88,
+      "image": {
+        "url": "https://res.cloudinary.com/avidu/image/upload/v1656003912/sample.jpg"
+      }
+    }
+  ]
