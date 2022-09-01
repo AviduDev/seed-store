@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../products/"
+import styles from "../../styles/Categories.module.css"
 
 export async function getStaticPaths() {
   const client = new ApolloClient({
@@ -97,7 +97,7 @@ export default function Category({ category, products }) {
             <div key={product.id}>
               <Link href={`../products/${product.slug}`}>
                 <a>
-                  <div>
+                  <div className={styles.img_ctn}>
                     <Image
                       src={product.image.url}
                       alt={product.name}
