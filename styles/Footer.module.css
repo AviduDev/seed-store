@@ -1,0 +1,8 @@
+.main {
+    display: grid;
+    align-content: center;
+}
+
+.text {
+    color: blueviolet;
+}
