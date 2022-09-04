@@ -23,10 +23,7 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <h1>Links to Categories</h1>
-        <Link href="/categories/medicines"><a>Medicines</a></Link>
-        <Link href="/categories/foods"><a>Foods</a></Link>
-
+        
         {/* --------------------HERO-------------------- */}
 
         <section>
@@ -69,6 +66,10 @@ export default function Home() {
           <Faqs />
         </section>
         
+        <h1>Links to Categories</h1>
+        <Link href="/categories/medicines"><a>Medicines</a></Link>
+        <Link href="/categories/foods"><a>Foods</a></Link>
+
       </main>
     </div>
   );

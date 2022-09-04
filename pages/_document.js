@@ -5,6 +5,9 @@ export default function Document() {
        <Head>
           <link rel="preconnect" href="<https://app.snipcart.com>" />
           <link rel="preconnect" href="<https://cdn.snipcart.com>" />
+          <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+          <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&display=swap" rel="stylesheet"></link>
           <link
              rel="stylesheet"
              href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"

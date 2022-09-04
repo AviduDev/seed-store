@@ -1,0 +1,28 @@
+.srv_ctn {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    background-color: #d7d7d7;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.srv_p {
+    display: grid;
+    align-items: center;
+    padding: 1vh;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    transform: rotate(-90deg);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.srv_ttl {
+    background-color: #252525;
+    color: white;
+    border-radius: 5px;
+}

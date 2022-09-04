@@ -1,0 +1,26 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.ctn {
+    margin: 5px;
+}
+
+.img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #d7d7d7;
+    border-radius: 5px;
+}
+
+
+.ttl {
+    background-color: #252525;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
