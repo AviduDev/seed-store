@@ -106,10 +106,10 @@ export default function productSlug({ product }) {
         <div className={styles.img_ctn}>
           <Image
             src={product.image.url}
-            width="320px"
-            height="320px"
+            width={product.image.width}
+            height={product.image.height}
             alt={product.name}
-            layout="fixed"
+            layout="responsive"
           />
         </div>
         <div>

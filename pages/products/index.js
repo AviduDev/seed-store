@@ -56,9 +56,9 @@ export default function Products({ allProducts }) {
                     <Image
                       src={product.image.url}
                       alt={product.name}
-                      height="320px"
-                      width="320px"
-                      layout="fixed"
+                      height={product.image.height}
+                      width={product.image.width}
+                      layout="responsive"
                     />
                   </div>
 
