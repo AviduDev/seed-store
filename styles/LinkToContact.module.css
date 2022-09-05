@@ -1,0 +1,20 @@
+.ctn {
+    background-color: #252525;
+    color: antiquewhite;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.ttl {
+    font-size: 3vh;
+    padding: 1vh;
+}
+
+.btn {
+    border: none;
+    padding: 1vh;
+    font-family: "archivo";
+    font-weight: 800;
+    font-size: 2vh;
+    border-radius: 3px;
+}

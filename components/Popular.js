@@ -3,7 +3,7 @@ import styles from "../styles/Popular.module.css";
 
 export default function Popular() {
   return (
-    <div>
+    <div className={styles.main}>
       <div className={styles.ctn}>
         <div className={styles.img}>
           <Image

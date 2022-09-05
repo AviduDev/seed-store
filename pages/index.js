@@ -51,7 +51,12 @@ export default function Home() {
         {/* --------------------HOW IT WORKS-------------------- */}
 
         <section>
-          <HowItWorks />
+          <h2>follow order</h2>
+          <HowItWorks title="1. order required seeds" content="this is content 1" />
+          <HowItWorks title="2. if not found on the site" content="this is content 2" />
+          <HowItWorks title="3. make the payment & order" content="this is content 2" />
+          <HowItWorks title="4. follow the guide on the packet" content="this is content 2" />
+          <HowItWorks title="5. feedback" content="this is content 2" />
         </section>
 
         {/* --------------------LINK TO CONTACT PAGE-------------------- */}
