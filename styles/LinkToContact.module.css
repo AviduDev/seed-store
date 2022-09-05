@@ -1,4 +1,5 @@
 .ctn {
+    width: 95vw;
     background-color: #252525;
     color: antiquewhite;
     padding: 1vh;
@@ -6,7 +7,7 @@
 }
 
 .ttl {
-    font-size: 3vh;
+    font-size: 4vh;
     padding: 1vh;
 }
 
