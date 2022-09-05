@@ -56,8 +56,8 @@ export default function Products({ allProducts }) {
                     <Image
                       src={product.image.url}
                       alt={product.name}
-                      height={product.image.height}
-                      width={product.image.width}
+                      height="320px"
+                      width="320px"
                       layout="fixed"
                     />
                   </div>
