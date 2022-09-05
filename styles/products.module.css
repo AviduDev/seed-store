@@ -1,3 +1,8 @@
 .img_ctn {
     position: relative;
 }
+
+.gid {
+    display: grid;
+    grid-auto-flow: column;
+}

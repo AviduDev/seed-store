@@ -46,7 +46,7 @@ export default function Products({ allProducts }) {
       <h2>
         All Products <span>🌿</span>
       </h2>
-      <div>
+      <div className={styles.grid}>
         {allProducts.map((product) => {
           return (
             <div key={product.id}>
