@@ -141,7 +141,7 @@ export default function productSlug({ product }) {
           <div className={styles.how}>
             <p>
               How to use Product Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Eum, ea.
+              adipisicing elit. Eum,
             </p>
           </div>
           <div className={styles.coution}>

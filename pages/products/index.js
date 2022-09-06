@@ -41,7 +41,7 @@ export default function Products({ allProducts }) {
   return (
     <div>
       <Head>
-        <title>My page title</title>
+        <title>Products to shop</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <h1>Back to Home</h1>
