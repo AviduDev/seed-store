@@ -5,4 +5,59 @@
 .gid {
     display: grid;
     grid-auto-flow: column;
+    justify-items: center;
 }
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name_container {
+    background-color: #252525;
+    color: white;
+    padding: 1vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.price_container {
+    background-color: #252525;
+    color: white;
+    padding: 1vh;
+    margin-left: 10px;
+    border-radius: 3px;
+    font-family: Archivo;
+    font-size: 2vh;
+    /* width: 100%; */
+}
+
+.btn_container button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #252525;
+    color: white;
+    border-radius: 3px;
+    width: 100%;
+    font-family: Archivo;
+    font-size: 2vh;
+}
+
+.btn_container {
+    background-color: #252525;
+    color: white;
+    border-radius: 3px;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.name {}
+.price {}

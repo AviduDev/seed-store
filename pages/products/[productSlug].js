@@ -96,6 +96,19 @@ export async function getStaticProps({ params }) {
   };
 }
 
+function graphCmsLoader({src, width}) {
+  const match = /^(https?:\/\/media.graphcms.com)(?:\/[^\/]+)?\/([^\/]+)$/.exec(src);
+
+  if (!match) {
+    throw new Error('Invalid GraphCMS asset URL');
+  }
+
+  const [prefix, handle] = match.slice(1);
+  const resizedSrc = `${prefix}/resize=width:${width}/${handle}`;
+
+  return resizedSrc;
+}
+
 export default function productSlug({ product }) {
   return (
     <div>
@@ -109,6 +122,7 @@ export default function productSlug({ product }) {
             width={product.image.width}
             height={product.image.height}
             alt={product.name}
+            loader={graphCmsLoader}
             layout="responsive"
           />
         </div>

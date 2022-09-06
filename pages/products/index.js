@@ -2,7 +2,8 @@ import Link from "next/link";
 import allProducts from "../data/products.json";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import Image from "next/image";
-import styles from "../../styles/products.module.css"
+import styles from "../../styles/products.module.css";
+import Head from "next/head";
 
 export async function getStaticProps() {
   const client = new ApolloClient({
@@ -36,22 +37,12 @@ export async function getStaticProps() {
   };
 }
 
-function graphCmsLoader({src, width}) {
-  const match = /^(https?:\/\/media.graphcms.com)(?:\/[^\/]+)?\/([^\/]+)$/.exec(src);
-
-  if (!match) {
-    throw new Error('Invalid GraphCMS asset URL');
-  }
-
-  const [prefix, handle] = match.slice(1);
-  const resizedSrc = `${prefix}/resize=width:${width}/${handle}`;
-
-  return resizedSrc;
-}
-
 export default function Products({ allProducts }) {
   return (
     <div>
+      <Head>
+        <title>Seeds and Plants</title>
+      </Head>
       <h1>Back to Home</h1>
       <Link href={"/"}>
         <a>Home</a>
@@ -62,7 +53,7 @@ export default function Products({ allProducts }) {
       <div className={styles.grid}>
         {allProducts.map((product) => {
           return (
-            <div key={product.id}>
+            <div key={product.id} className={styles.grid}>
               <Link href={`products/${product.slug}`}>
                 <a>
                   <div className={styles.img_ctn}>
@@ -72,26 +63,36 @@ export default function Products({ allProducts }) {
                       height={product.image.height}
                       width={product.image.width}
                       layout="responsive"
-                      loader={graphCmsLoader}
                     />
-                  </div>
-
-                  <div>
-                    <h3>{product.name}</h3>
-                    <p>${product.price}</p>
                   </div>
                 </a>
               </Link>
-              <button
-                className="btn snipcart-add-item"
-                data-item-id={product.id}
-                data-item-price={product.price}
-                data-item-url={`products/${product.slug}`}
-                data-item-image={product.image.url}
-                data-item-name={product.name}
-              >
-                Add to cart 🛒
-              </button>
+              
+                <Link href={`products/${product.slug}`}>
+                  <div className={styles.name_container}>
+                    <a>
+                      <h3>{product.name}</h3>
+                    </a>
+                  </div>
+                </Link>
+  
+              <div className={styles.details}>
+                <div className={styles.price_container}>
+                  <p>${product.price}</p>
+                </div>
+                <div className={styles.btn_container}>
+                  <button
+                    className="btn snipcart-add-item"
+                    data-item-id={product.id}
+                    data-item-price={product.price}
+                    data-item-url={`products/${product.slug}`}
+                    data-item-image={product.image.url}
+                    data-item-name={product.name}
+                  >
+                    Add to cart 🛒
+                  </button>
+                </div>
+              </div>
             </div>
           );
         })}
