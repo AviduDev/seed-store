@@ -39,7 +39,7 @@ export async function getStaticProps() {
 
 export default function Products({ allProducts }) {
   return (
-    <div>
+    <div className={styles.main}>
       <Head>
         <title>Products to shop</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -54,7 +54,7 @@ export default function Products({ allProducts }) {
       <div className={styles.grid}>
         {allProducts.map((product) => {
           return (
-            <div key={product.id} className={styles.grid}>
+            <div key={product.id} className={styles.p_details}>
               <Link href={`products/${product.slug}`}>
                 <a>
                   <div className={styles.img_ctn}>
@@ -69,12 +69,12 @@ export default function Products({ allProducts }) {
                 </a>
               </Link>
               
-                <Link href={`products/${product.slug}`}>
-                  <div className={styles.name_container}>
+                <Link href={`products/${product.slug}`} className={styles.name_ctn}>
+                  
                     <a>
-                      <h3>{product.name}</h3>
+                      <h3 className={styles.name}>{product.name}</h3>
                     </a>
-                  </div>
+
                 </Link>
   
               <div className={styles.details}>
