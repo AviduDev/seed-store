@@ -7,25 +7,25 @@ import Head from "next/head";
 
 export async function getStaticProps() {
   const client = new ApolloClient({
-    uri: "https://api-eu-central-1.hygraph.com/v2/cl7h828830gl001t196as87mz/master",
+    uri: "https://api-eu-central-1.hygraph.com/v2/cl7pz3sck4mjl01umcajg4ihg/master",
     cache: new InMemoryCache(),
   });
 
   const data = await client.query({
     query: gql`
-      query MyQuery {
-        products {
-          image {
-            url
-            height
-            width
-          }
-          name
-          price
-          slug
-          id
+    query MyQuery {
+      products {
+        id
+        name
+        slug
+        price
+        image {
+          url
+          width
+          height
         }
       }
+    }
     `,
   });
 

@@ -1,11 +1,12 @@
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/Categories.module.css"
 
 export async function getStaticPaths() {
   const client = new ApolloClient({
-    uri: "https://api-eu-central-1.hygraph.com/v2/cl7h828830gl001t196as87mz/master",
+    uri: "https://api-eu-central-1.hygraph.com/v2/cl7pz3sck4mjl01umcajg4ihg/master",
     cache: new InMemoryCache(),
   });
 
@@ -48,7 +49,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const client = new ApolloClient({
-    uri: "https://api-eu-central-1.hygraph.com/v2/cl7h828830gl001t196as87mz/master",
+    uri: "https://api-eu-central-1.hygraph.com/v2/cl7pz3sck4mjl01umcajg4ihg/master",
     cache: new InMemoryCache(),
   });
 
@@ -90,6 +91,10 @@ export async function getStaticProps({ params }) {
 export default function Category({ category, products }) {
   return (
     <div>
+      <Head>
+        <title>My page title</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <h1>{category.name}</h1>
       <div>
         {products.map((product) => {

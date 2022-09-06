@@ -78,6 +78,8 @@ export default function Home() {
         <h1>Links to Categories</h1>
         <Link href="/categories/medicines"><a>Medicines</a></Link>
         <Link href="/categories/foods"><a>Foods</a></Link>
+        <Link href="/categories/flowers"><a>flowers</a></Link>
+        <Link href="/categories/others"><a>others</a></Link>
 
       </main>
     </div>

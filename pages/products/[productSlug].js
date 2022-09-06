@@ -5,7 +5,7 @@ import styles from "../../styles/product.module.css";
 
 export async function getStaticPaths() {
   const client = new ApolloClient({
-    uri: "https://api-eu-central-1.hygraph.com/v2/cl7h828830gl001t196as87mz/master",
+    uri: "https://api-eu-central-1.hygraph.com/v2/cl7pz3sck4mjl01umcajg4ihg/master",
     cache: new InMemoryCache(),
   });
 
@@ -19,22 +19,10 @@ export async function getStaticPaths() {
             width
           }
           name
-          price
+
           slug
-          description
+
           id
-          use {
-            text
-            raw
-            markdown
-            html
-          }
-          about {
-            html
-            markdown
-            raw
-            text
-          }
         }
       }
     `,
@@ -56,7 +44,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const client = new ApolloClient({
-    uri: "https://api-eu-central-1.hygraph.com/v2/cl7h828830gl001t196as87mz/master",
+    uri: "https://api-eu-central-1.hygraph.com/v2/cl7pz3sck4mjl01umcajg4ihg/master",
     cache: new InMemoryCache(),
   });
 
@@ -66,18 +54,29 @@ export async function getStaticProps({ params }) {
         product(where: { slug: $slug }) {
           id
           name
-          description
+          price
+          about {
+            html
+          }
+          how {
+            html
+          }
+          caution {
+            html
+          }
+          prohibited {
+            html
+          }
           image {
             url
             width
             height
           }
-          price
-          about {
-            html
-          }
-          use {
-            html
+          images {
+            id
+            url
+            width
+            height
           }
           slug
         }
@@ -136,39 +135,61 @@ export default function productSlug({ product }) {
             </div>
           </div>
           <div className={styles.dsc}>
-            <p>{product.description}</p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: product.about.html,
+              }}
+            ></div>
           </div>
           <div className={styles.how}>
-            <p>
-              How to use Product Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Eum,
-            </p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: product.how.html,
+              }}
+            ></div>
           </div>
-          <div className={styles.coution}>
-            <p>
-              Coution Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Eum, ea.
-            </p>
+          <div className={styles.caution}>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: product.caution.html,
+              }}
+            ></div>
           </div>
           <div className={styles.prohibited}>
-            <p>
-              Prohibited countries Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Eum, ea.
-            </p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: product.prohibited.html,
+              }}
+            ></div>
+          </div>
+          <div>
+            {/* {product.images.map((images) => {
+              return (
+                <div key={product.images.id}>
+                  <Image
+                    src={product.images.url}
+                    alt={product.name}
+                    height={product.images.height}
+                    width={product.images.width}
+                    layout="responsive"
+                  ></Image>
+                </div>
+              )
+            })} */}
           </div>
 
-          <div
+          {/* <div
           className={styles.about}
             dangerouslySetInnerHTML={{
               __html: product.about.html,
             }}
-          ></div>
-          <div
+          ></div> */}
+          {/* <div
           className={styles.use}
             dangerouslySetInnerHTML={{
               __html: product.use.html,
             }}
-          ></div>
+          ></div> */}
         </div>
       </div>
     </div>
