@@ -1,3 +1,117 @@
 .img_ctn {
     position: relative;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  .img_ctn {
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    width: 320px;
+    height: 320px;
+  }
+  
+  .img_ctn image {
+    border-radius: 5px;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .name_ctn {
+  }
+  
+  .p_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* width: 100%; */
+  }
+  
+  .name {
+    background-color: #252525;
+    color: white;
+    padding: 1vh;
+    border-radius: 3px;
+    cursor: pointer;
+  
+  }
+  .price_container {
+    background-color: #252525;
+    color: white;
+    padding: 1vh;
+    margin-left: 10px;
+    border-radius: 3px;
+    font-family: Archivo;
+    font-size: 2vh;
+  
+  }
+  
+  .btn_container button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #252525;
+    color: white;
+    border-radius: 3px;
+    font-family: Archivo;
+    font-size: 2vh;
+  }
+  
+  .btn_container {
+    background-color: #252525;
+    color: white;
+    border-radius: 3px;
+    /* width: 100%; */
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .name {
+  }
+  .price {
+  }
+  
+  
+  /*---------------START WITH MOBILE FIRST--------------------*/
+   
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {}
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {}
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }

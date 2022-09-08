@@ -102,14 +102,14 @@ export default function productSlug({ product }) {
         <title>My page title</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div>
+      <div className={styles.main}>
         <div className={styles.img_ctn}>
           <Image
             src={product.image.url}
             width={product.image.width}
             height={product.image.height}
             alt={product.name}
-            layout="responsive"
+            layout="fill"
             loading="lazy"
           />
         </div>

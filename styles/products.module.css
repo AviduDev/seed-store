@@ -3,13 +3,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+  overflow: hidden;
 }
 
 .img_ctn {
-  width: 95vw;
   border-radius: 5px;
   margin: 10px;
   overflow: hidden;
+  width: 320px;
+  height: 320px;
 }
 
 .img_ctn image {
@@ -17,9 +20,11 @@
 }
 
 .grid {
-  /* display: grid;
-  align-content: center;
-  width: 95vw; */
+  display: grid;
+  gap: 10px;
+}
+
+.name_ctn {
 }
 
 .p_details {
@@ -34,7 +39,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .name {
@@ -43,7 +48,7 @@
   padding: 1vh;
   border-radius: 3px;
   cursor: pointer;
-  width: 95vw;
+
 }
 .price_container {
   background-color: #252525;
@@ -53,7 +58,7 @@
   border-radius: 3px;
   font-family: Archivo;
   font-size: 2vh;
-  /* width: 100%; */
+
 }
 
 .btn_container button {
@@ -64,7 +69,6 @@
   background-color: #252525;
   color: white;
   border-radius: 3px;
-  width: 100%;
   font-family: Archivo;
   font-size: 2vh;
 }
@@ -73,7 +77,7 @@
   background-color: #252525;
   color: white;
   border-radius: 3px;
-  width: 100%;
+  /* width: 100%; */
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -81,4 +85,29 @@
 .name {
 }
 .price {
+}
+
+
+/*---------------START WITH MOBILE FIRST--------------------*/
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

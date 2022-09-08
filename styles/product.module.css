@@ -7,8 +7,18 @@
   overflow: hidden;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 .img_ctn {
   border-radius: 5px;
+  margin: 10px;
+  width: 95%;
+  aspect-ratio: 14 / 10;
 }
 
 .details {
@@ -108,4 +118,36 @@
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
+}
+
+/*---------------START WITH MOBILE FIRST--------------------*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .details {
+    width: 75vw;
+  }
+  .img_ctn {
+    width: 95%;
+    aspect-ratio: 14 / 10;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .details {
+    width: 50vw;
+  }
+  .img_ctn {
+    width: 60%;
+    aspect-ratio: 14 / 10;
+  }
 }

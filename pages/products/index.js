@@ -13,19 +13,19 @@ export async function getStaticProps() {
 
   const data = await client.query({
     query: gql`
-    query MyQuery {
-      products {
-        id
-        name
-        slug
-        price
-        image {
-          url
-          width
-          height
+      query MyQuery {
+        products {
+          id
+          name
+          slug
+          price
+          image {
+            url
+            width
+            height
+          }
         }
       }
-    }
     `,
   });
 
@@ -63,20 +63,21 @@ export default function Products({ allProducts }) {
                       alt={product.name}
                       height={product.image.height}
                       width={product.image.width}
-                      layout="responsive"
+                      layout="fixed"
                     />
                   </div>
                 </a>
               </Link>
-              
-                <Link href={`products/${product.slug}`} className={styles.name_ctn}>
-                  
-                    <a>
-                      <h3 className={styles.name}>{product.name}</h3>
-                    </a>
 
-                </Link>
-  
+              <Link
+                href={`products/${product.slug}`}
+                className={styles.name_ctn}
+              >
+                <a>
+                  <h3 className={styles.name}>{product.name}</h3>
+                </a>
+              </Link>
+
               <div className={styles.details}>
                 <div className={styles.price_container}>
                   <p>${product.price}</p>

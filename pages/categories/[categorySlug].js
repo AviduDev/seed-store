@@ -90,16 +90,16 @@ export async function getStaticProps({ params }) {
 
 export default function Category({ category, products }) {
   return (
-    <div>
+    <div className={styles.main}>
       <Head>
         <title>My page title</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <h1>{category.name}</h1>
-      <div>
+      <div className={styles.grid}>
         {products.map((product) => {
           return (
-            <div key={product.id}>
+            <div key={product.id} className={styles.p_details}>
               <Link href={`../products/${product.slug}`}>
                 <a>
                   <div className={styles.img_ctn}>
@@ -111,23 +111,35 @@ export default function Category({ category, products }) {
                       layout="fixed"
                     />
                   </div>
-
-                  <div>
-                    <h3>{product.name}</h3>
-                    <p>${product.price}</p>
-                  </div>
                 </a>
               </Link>
-              <button
-                className="btn snipcart-add-item"
-                data-item-id={product.id}
-                data-item-price={product.price}
-                data-item-url={`../products/${product.slug}`}
-                data-item-image={product.image.url}
-                data-item-name={product.name}
+
+              <Link
+                href={`../products/${product.slug}`}
+                className={styles.name_ctn}
               >
-                Add to cart 🛒
-              </button>
+                <a>
+                  <h3 className={styles.name}>{product.name}</h3>
+                </a>
+              </Link>
+
+              <div className={styles.details}>
+                <div className={styles.price_container}>
+                  <p>${product.price}</p>
+                </div>
+                <div className={styles.btn_container}>
+                  <button
+                    className="btn snipcart-add-item"
+                    data-item-id={product.id}
+                    data-item-price={product.price}
+                    data-item-url={`../products/${product.slug}`}
+                    data-item-image={product.image.url}
+                    data-item-name={product.name}
+                  >
+                    Add to cart 🛒
+                  </button>
+                </div>
+              </div>
             </div>
           );
         })}
