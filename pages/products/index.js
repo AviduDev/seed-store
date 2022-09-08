@@ -49,7 +49,7 @@ export default function Products({ allProducts }) {
         <a>Home</a>
       </Link>
       <h2>
-        All Products <span>🌿</span>
+        All Seeds <span>🌿</span>
       </h2>
       <div className={styles.grid}>
         {allProducts.map((product) => {
