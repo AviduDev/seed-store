@@ -16,3 +16,29 @@
     font-size: 3vh;
     margin: 5px;
 }
+
+/*---------------START WITH MOBILE FIRST--------------------*/
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .main {
+        max-width: 75vw;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .main {
+        max-width: 60vw;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main {
+        max-width: 50vw;
+    }
+}

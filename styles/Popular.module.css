@@ -39,13 +39,27 @@
 /*---------------START WITH MOBILE FIRST--------------------*/
  
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .ttl h3 {
+        font-size: 3.5vh;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .ttl h3 {
+        font-size: 4vh;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .main {}
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .ttl h3 {
+        font-size: 5vh;
+    }
+}
