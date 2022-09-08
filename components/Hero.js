@@ -3,7 +3,7 @@ import styles from "../styles/Hero.module.css";
 
 export default function Hero() {
   return (
-    <div>
+    <div className={styles.main}>
       <div className={styles.hero}>
         <div className={styles.img}>
           <Image

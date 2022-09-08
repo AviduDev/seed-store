@@ -1,0 +1,16 @@
+.main {
+    position: sticky;
+    bottom: 10px;
+    background-color: #252525;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.snipcart-checkout {
+    background-color: #fff;
+}

@@ -1,108 +1,111 @@
 .img_ctn {
-    background-color: #F5F5F5;
-    margin: 10px;
-    border-radius: 5px;
-    position: relative;
+  background-color: #f5f5f5;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.img_ctn {
+  border-radius: 5px;
 }
 
 .details {
-    background-color: #f5f5f5;
-    margin: 10px;
-    padding: 1vh;
-    border-radius: 5px;
+  background-color: #f5f5f5;
+  margin: 10px;
+  padding: 1vh;
+  border-radius: 5px;
 }
 
 .name_ctn {
-    background-color: #252525;
-    padding: 10px;
-    border-radius: 3px;
-    color: white;
+  background-color: #252525;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
 }
 
 .price_btn_ctn {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .price_ctn {
-    background-color: #252525;
-    color: white;
-    padding: 10px;
-    border-radius: 3px;
-    margin-right: 10px;
-    font-family: Archivo;
-    font-size: 2vh;
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-family: Archivo;
+  font-size: 2vh;
 }
 
 .btn_ctn button {
-    border: none;
-    background-color: transparent;
-    padding: 10px;
-    color: white;
-    border-radius: 3px;
-    width: 100%;
-    font-family: Archivo;
-    font-size: 2vh;
-    cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  border-radius: 3px;
+  width: 100%;
+  font-family: Archivo;
+  font-size: 2vh;
+  cursor: pointer;
 }
 
 .btn_ctn {
-    background-color: #252525;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
+  background-color: #252525;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .dsc {
-    background-color: #252525;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
-
 
 .how {
-    background-color: #252525;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-
-.coution {
-    background-color: #252525;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
+.caution {
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .prohibited {
-    background-color: #252525;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-
 .about {
-    background-color: #252525;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .use {
-    background-color: #252525;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }

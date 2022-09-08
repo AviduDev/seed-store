@@ -25,7 +25,7 @@ export default function Home() {
         
         {/* --------------------HERO-------------------- */}
 
-        <section>
+        <section className={styles.hero}>
           <Hero />
         </section>
 

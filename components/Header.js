@@ -1,13 +1,15 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import Link from "next/link";
+import styles from "../styles/Header.module.css"
 
 export default function Header() {
   return (
-    <nav>
+    <nav className={styles.main}>
       <Link href={"/"}>
         <a>
           <div>
             <p>
-              PLANTS<span>☘</span>
+            ⌂
             </p>
           </div>
         </a>
@@ -16,10 +18,11 @@ export default function Header() {
         <a>Seeds</a>
       </Link>
 
-      <button className="nav-price snipcart-checkout">
-        <span>🛒</span>
-        <p className="snipcart-total-price">$0.00</p>
-      </button>
+    
+      <div className="nav-price snipcart-checkout">
+        <div>🛒</div>
+        <div className="snipcart-total-price">$0.00</div>
+      </div>
     </nav>
   );
 }
