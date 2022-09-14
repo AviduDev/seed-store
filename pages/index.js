@@ -21,8 +21,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-
-        
         {/* --------------------HERO-------------------- */}
 
         <section className={styles.hero}>
@@ -51,10 +49,22 @@ export default function Home() {
 
         <section>
           <h2>follow order</h2>
-          <HowItWorks title="1. order required seeds" content="this is content 1" />
-          <HowItWorks title="2. if not found on the site" content="this is content 2" />
-          <HowItWorks title="3. make the payment & order" content="this is content 2" />
-          <HowItWorks title="4. follow the guide on the packet" content="this is content 2" />
+          <HowItWorks
+            title="1. order required seeds"
+            content="this is content 1"
+          />
+          <HowItWorks
+            title="2. if not found on the site"
+            content="this is content 2"
+          />
+          <HowItWorks
+            title="3. make the payment & order"
+            content="this is content 2"
+          />
+          <HowItWorks
+            title="4. follow the guide on the packet"
+            content="this is content 2"
+          />
           <HowItWorks title="5. feedback" content="this is content 2" />
         </section>
 
@@ -67,20 +77,22 @@ export default function Home() {
         {/* --------------------FAQS-------------------- */}
 
         <section>
-          <h2>follow order</h2>
+          <h2>faqs</h2>
           <Faqs title="1. order required seeds" content="this is content 1" />
-          <Faqs title="2. if not found on the site" content="this is content 2" />
-          <Faqs title="3. make the payment & order" content="this is content 2" />
-          <Faqs title="4. follow the guide on the packet" content="this is content 2" />
+          <Faqs
+            title="2. if not found on the site"
+            content="this is content 2"
+          />
+          <Faqs
+            title="3. make the payment & order"
+            content="this is content 2"
+          />
+          <Faqs
+            title="4. follow the guide on the packet"
+            content="this is content 2"
+          />
           <Faqs title="5. feedback" content="this is content 2" />
         </section>
-
-        <h1>Links to Categories</h1>
-        <Link href="/categories/medicines"><a>Medicines</a></Link>
-        <Link href="/categories/foods"><a>Foods</a></Link>
-        <Link href="/categories/flowers"><a>flowers</a></Link>
-        <Link href="/categories/others"><a>others</a></Link>
-
       </main>
     </div>
   );

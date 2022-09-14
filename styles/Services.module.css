@@ -6,9 +6,10 @@
     display: flex;
     flex-direction: row;
     justify-items: center;
-    background-color: #d7d7d7;
-    border-radius: 5px;
+    background-color: #D0FF85;
+    border-radius: 25px;
     margin: 10px;
+    color: #006400;
 }
 
 .srv_p {
@@ -27,9 +28,9 @@
 }
 
 .srv_ttl {
-    background-color: #252525;
-    color: white;
-    border-radius: 5px;
+    background-color: #006400;
+    color: #D0FF85;
+    border-radius: 25px;
 }
 
 /*---------------START WITH MOBILE FIRST--------------------*/

@@ -1,9 +1,14 @@
 .ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     width: 95vw;
-    background-color: #252525;
-    color: antiquewhite;
+    background-color: #006400;
+    color: #D0FF85;
     padding: 1vh;
-    border-radius: 5px;
+    border-radius: 15px;
+
 }
 
 .ttl {
@@ -17,7 +22,9 @@
     font-family: "archivo";
     font-weight: 800;
     font-size: 2vh;
-    border-radius: 3px;
+    border-radius: 25px;
+    background-color: #D0FF85;
+    color: #006400;
 }
 
 /*---------------START WITH MOBILE FIRST--------------------*/

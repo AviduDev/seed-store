@@ -12,9 +12,10 @@ export default function HowItWorks(props) {
       <div className={styles.ctn}
         style={{
           width: "100%",
-          marginBottom: "15px",
+          marginBottom: "2vw",
           lineHeight: "15px",
           borderBottom: "2px solid #252525",
+          borderRadius: "15px",
         }}
       >
         <button className={styles.qst}
@@ -22,7 +23,7 @@ export default function HowItWorks(props) {
             width: "100%",
             position: "relative",
             textAlign: "left",
-            padding: "4px",
+            padding: "3vw",
             border: "none",
             background: "transparent",
             outline: "none",
@@ -30,6 +31,9 @@ export default function HowItWorks(props) {
             fontFamily: "archivo",
             fontWeight: "900",
             fontSize: "3vh",
+            backgroundColor: "#D0FF85",
+            color: "#006400",
+            borderRadius: "15px",
           }}
           onClick={toggle}
           type="button"
@@ -39,10 +43,13 @@ export default function HowItWorks(props) {
         <div className={styles.ans}
           style={{ 
             display: isShowing ? "block" : "none", 
-            padding: "5px",
+            padding: "3vw",
             fontFamily: "archivo",
             fontWeight: "800",
             fontSize: "2.5vh",
+            backgroundColor: "#006400",
+            color: "#D0FF85",
+            borderRadius: "15px",
         }}
           dangerouslySetInnerHTML={{
             __html: props.content,

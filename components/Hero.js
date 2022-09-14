@@ -22,10 +22,14 @@ export default function Hero() {
       </div>
       <div className={styles.hero_p_ctn}>
         <p className={styles.hero_p}>
-          shop <span className={styles.txt_hlt}>seeds</span> and dried <span className={styles.txt_hlt}>parts</span> such as <span className={styles.txt_hlt}>roots</span>, <span className={styles.txt_hlt}>leaves</span>, <span className={styles.txt_hlt}>fruits</span> of
-          <span className={styles.txt_hlt}>Vegetables</span>, <span className={styles.txt_hlt}>flowers</span>, and home use <span className={styles.txt_hlt}>medicine</span> plants.<br/> *Before buying you
-          need to make sure that some seeds or parts may prohibited to import in
-          to your country*
+          shop <span className={styles.txt_hlt}>seeds</span> and dried{" "}
+          <span className={styles.txt_hlt}>parts</span> such as{" "}
+          <span className={styles.txt_hlt}>roots</span>,{" "}
+          <span className={styles.txt_hlt}>leaves</span>,{" "}
+          <span className={styles.txt_hlt}>fruits</span> of
+          <span className={styles.txt_hlt}>Vegetables</span>,{" "}
+          <span className={styles.txt_hlt}>flowers</span>, and home use{" "}
+          <span className={styles.txt_hlt}>medicine</span> plants.
         </p>
       </div>
     </div>

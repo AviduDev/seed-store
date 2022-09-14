@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Popular.module.css";
+import Link from "next/link";
 
 export default function Popular() {
   return (
@@ -12,9 +13,13 @@ export default function Popular() {
             alt=""
           ></Image>
         </div>
-        <div className={styles.ttl}>
-          <h3>medicines</h3>
-        </div>
+        <Link href="/categories/medicines">
+          <a>
+            <div className={styles.ttl}>
+              <h3>medicines</h3>
+            </div>
+          </a>
+        </Link>
       </div>
 
       <div className={styles.ctn}>
@@ -25,9 +30,13 @@ export default function Popular() {
             alt=""
           ></Image>
         </div>
-        <div className={styles.ttl}>
-          <h3>medicines</h3>
-        </div>
+        <Link href="/categories/foods">
+          <a>
+            <div className={styles.ttl}>
+              <h3>foods</h3>
+            </div>
+          </a>
+        </Link>
       </div>
 
       <div className={styles.ctn}>
@@ -38,9 +47,13 @@ export default function Popular() {
             alt=""
           ></Image>
         </div>
-        <div className={styles.ttl}>
-          <h3>medicines</h3>
-        </div>
+        <Link href="/categories/flowers">
+          <a>
+            <div className={styles.ttl}>
+              <h3>flowers</h3>
+            </div>
+          </a>
+        </Link>
       </div>
 
       <div className={styles.ctn}>
@@ -51,9 +64,13 @@ export default function Popular() {
             alt=""
           ></Image>
         </div>
-        <div className={styles.ttl}>
-          <h3>medicines</h3>
-        </div>
+        <Link href="/categories/others">
+          <a>
+            <div className={styles.ttl}>
+              <h3>others</h3>
+            </div>
+          </a>
+        </Link>
       </div>
     </div>
   );
