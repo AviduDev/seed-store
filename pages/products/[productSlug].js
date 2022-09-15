@@ -2,6 +2,7 @@ import Head from "next/head";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import Image from "next/image";
 import styles from "../../styles/product.module.css";
+import { motion } from "framer-motion";
 
 export async function getStaticPaths() {
   const client = new ApolloClient({
