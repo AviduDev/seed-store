@@ -4,7 +4,6 @@ import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import Image from "next/image";
 import styles from "../../styles/products.module.css";
 import Head from "next/head";
-import { motion } from "framer-motion";
 
 export async function getStaticProps() {
   const client = new ApolloClient({
@@ -40,7 +39,7 @@ export async function getStaticProps() {
 
 export default function Products({ allProducts }) {
   return (
-    <motion.div className={styles.main} exit={{ opacity: 0 }}>
+    <div className={styles.main} exit={{ opacity: 0 }}>
       <Head>
         <title>Products to shop</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -52,10 +51,10 @@ export default function Products({ allProducts }) {
       <h2>
         All Seeds <span>🌿</span>
       </h2>
-      <motion.div className={styles.grid} exit={{ opacity: 0 }}>
+      <div className={styles.grid}>
         {allProducts.map((product) => {
           return (
-            <motion.div key={product.id} className={styles.p_details} exit={{ opacity: 0 }}>
+            <div key={product.id} className={styles.p_details}>
               <Link href={`products/${product.slug}`}>
                 <a>
                   <div className={styles.img_ctn}>
@@ -96,10 +95,10 @@ export default function Products({ allProducts }) {
                   </button>
                 </div>
               </div>
-            </motion.div>
+            </div>
           );
         })}
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }
