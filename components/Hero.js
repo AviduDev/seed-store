@@ -20,7 +20,7 @@ export default function Hero() {
           <button className={styles.btn}>SHOP SEEDS</button>
         </div>
       </div>
-      <div className={styles.hero_p_ctn}>
+      {/* <div className={styles.hero_p_ctn}>
         <p className={styles.hero_p}>
           shop <span className={styles.txt_hlt}>seeds</span> and dried{" "}
           <span className={styles.txt_hlt}>parts</span> such as{" "}
@@ -31,7 +31,7 @@ export default function Hero() {
           <span className={styles.txt_hlt}>flowers</span>, and home use{" "}
           <span className={styles.txt_hlt}>medicine</span> plants.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

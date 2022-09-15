@@ -78,20 +78,7 @@ export default function Home() {
 
         <section>
           <h2>faqs</h2>
-          <Faqs title="1. order required seeds" content="this is content 1" />
-          <Faqs
-            title="2. if not found on the site"
-            content="this is content 2"
-          />
-          <Faqs
-            title="3. make the payment & order"
-            content="this is content 2"
-          />
-          <Faqs
-            title="4. follow the guide on the packet"
-            content="this is content 2"
-          />
-          <Faqs title="5. feedback" content="this is content 2" />
+            <Faqs />
         </section>
       </main>
     </div>

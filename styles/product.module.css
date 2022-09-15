@@ -1,9 +1,9 @@
 .img_ctn {
-  background-color: #f5f5f5;
+  background-color: #D0FF85;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 2vw;
   position: relative;
-  border-radius: 5px;
+
   overflow: hidden;
 }
 
@@ -15,24 +15,24 @@
   overflow: hidden;
 }
 .img_ctn {
-  border-radius: 5px;
+  border-radius: 2vw;
   margin: 10px;
   width: 95%;
   aspect-ratio: 14 / 10;
 }
 
 .details {
-  background-color: #f5f5f5;
+  background-color: #D0FF85;
   margin: 10px;
   padding: 1vh;
-  border-radius: 5px;
+  border-radius: 2vw;
 }
 
 .name_ctn {
-  background-color: #252525;
+  background-color: #006400;
   padding: 10px;
-  border-radius: 3px;
-  color: white;
+  border-radius: 2vw;
+  color: #D0FF85;
 }
 
 .price_btn_ctn {
@@ -45,10 +45,10 @@
 }
 
 .price_ctn {
-  background-color: #252525;
-  color: white;
+  background-color: #006400;
+  color: #D0FF85;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 2vw;
   margin-right: 10px;
   font-family: Archivo;
   font-size: 2vh;
@@ -56,10 +56,10 @@
 
 .btn_ctn button {
   border: none;
-  background-color: transparent;
+  background-color: #006400;
   padding: 10px;
-  color: white;
-  border-radius: 3px;
+  color: #D0FF85;
+  border-radius: 2vw;
   width: 100%;
   font-family: Archivo;
   font-size: 2vh;
@@ -67,56 +67,40 @@
 }
 
 .btn_ctn {
-  background-color: #252525;
+  background-color: #006400;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 2vw;
   cursor: pointer;
 }
 
 .dsc {
-  background-color: #252525;
-  color: white;
+  background-color: #006400;
+  color: #D0FF85;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 2vw;
 }
 
 .how {
-  background-color: #252525;
-  color: white;
+  background-color: #006400;
+  color: #D0FF85;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 2vw;
   margin-top: 10px;
 }
 
 .caution {
-  background-color: #252525;
-  color: white;
+  background-color: #006400;
+  color: #D0FF85;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 2vw;
   margin-top: 10px;
 }
 
 .prohibited {
-  background-color: #252525;
-  color: white;
+  background-color: #006400;
+  color: #D0FF85;
   padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.about {
-  background-color: #252525;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.use {
-  background-color: #252525;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 2vw;
   margin-top: 10px;
 }
 

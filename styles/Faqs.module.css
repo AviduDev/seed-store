@@ -1,126 +1,61 @@
-.ttl {
-  background-color: #d8d8d8;
-  padding: 1vh;
-  border-radius: 5px;
-  margin: 1vh;
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
 }
 
-.lbl {
-  margin: 1vh;
+.ctn {
+  margin: 2vw;
+  background-color: #D0FF85;
+  border-radius: 2vw;
 }
 
-.ac_large {
-  background-color: #252525;
-  color: white;
-  margin: 1vh;
-  border-radius: 5px;
+.qst {
+  font-size: 2rem;
+  padding: 1vw;
+  color: #006400;
+}
+
+.ans {
+  padding: 1rem;
+  font-size: 3.5vw;
+  background-color: #006400;
+  color: #D0FF85;
+  margin: 1vw;
+  border-radius: 2vw;
 }
 
 
-.ac_container h3 {
-  font-size: 3vh;
-}
 
-.ac_medium p {
-  font-family: Archivo;
-  font-weight: 800;
-  font-size: 3vh;
-}
 
-.ac_container label {
+/*---------------START WITH MOBILE FIRST--------------------*/
  
- 
-
- 
-  position: relative;
-  z-index: 20;
-  display: block;
-
-  cursor: pointer;
-
-  
-
-  
-  
-  
- 
-  height: 30px;
-  line-height: 20px;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
 }
 
-.ac_container {
-  width: 100%;
-  margin: 10px auto 30px auto;
-  text-align: left;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+  }
 }
 
-.ac_container label:hover {
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+  }
 }
-
-.ac_container input:checked + label,.ac_container input:checked + label:hover {
-
-
-
-
-}
-
-.ac_container label:hover:after,.ac_container input:checked + label:hover:after {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 13px;
-  top: 7px;
-  background: transparent url("https://res.cloudinary.com/avidu/image/upload/v1662363470/down-chevron_1_zfenhe.png") no-repeat center center;
-}
-
-.ac_container input:checked + label:hover:after {
-  background-image: url("https://res.cloudinary.com/avidu/image/upload/v1662363621/up-chevron_1_eyuh7w.png");
-}
-
-.ac_container input {
-  display: none;
-}
-
-.ac_container article {
-
-  margin-top: -1px;
-  overflow: hidden;
-  height: 0;
-  position: relative;
-  z-index: 10;
-  -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -moz-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-}
-
-.ac_container article p {
-  font-style: normal;
-
-  padding: 20px;
-  font: normal normal 12px 'Open Sans';
-}
-
-.ac_container input:checked ~ article {
-  -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-}
-
-.ac_container input:checked ~ article.ac_small {
-  height: 140px;
-}
-
-.ac_container input:checked ~ article.ac_medium {
-  height: 180px;
-}
-
-.ac_container input:checked ~ article.ac_large {
-  height: 230px;
-}
-
