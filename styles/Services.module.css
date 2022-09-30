@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-items: center;
     background-color: #D0FF85;
-    border-radius: 25px;
+    border-radius: 2vh;
     margin: 10px;
     color: #006400;
 }
@@ -30,7 +30,7 @@
 .srv_ttl {
     background-color: #006400;
     color: #D0FF85;
-    border-radius: 25px;
+    border-radius: 2vh;
 }
 
 /*---------------START WITH MOBILE FIRST--------------------*/

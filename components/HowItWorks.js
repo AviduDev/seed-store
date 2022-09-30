@@ -15,7 +15,7 @@ export default function HowItWorks(props) {
           marginBottom: "2vw",
           lineHeight: "15px",
           borderBottom: "2px solid #252525",
-          borderRadius: "15px",
+          borderRadius: "2vh",
         }}
       >
         <button className={styles.qst}
@@ -33,7 +33,7 @@ export default function HowItWorks(props) {
             fontSize: "3vh",
             backgroundColor: "#D0FF85",
             color: "#006400",
-            borderRadius: "15px",
+            borderRadius: "2vh",
           }}
           onClick={toggle}
           type="button"
@@ -49,7 +49,7 @@ export default function HowItWorks(props) {
             fontSize: "2.5vh",
             backgroundColor: "#006400",
             color: "#D0FF85",
-            borderRadius: "15px",
+            borderRadius: "2vh",
         }}
           dangerouslySetInnerHTML={{
             __html: props.content,

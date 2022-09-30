@@ -13,7 +13,7 @@ export default function Popular() {
             alt=""
           ></Image>
         </div>
-        <Link href="/categories/medicines">
+        <Link className={styles.lin} href="/categories/medicines">
           <a>
             <div className={styles.ttl}>
               <h3>medicines</h3>

@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #D0FF85;
-    border-radius: 20px;
+    border-radius: 2vh;
     overflow: ;
 }
 
@@ -19,17 +19,25 @@
     width: 40vw;
     height: 40vw;
     background-color: #D0FF85;
-    border-radius: 20px;
+    border-radius: 2vh;
 }
 
+.lin {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 .ttl {
+    display: flex;
+    flex-direction: column;
     background-color: #006400;
     color: #D0FF85;
     padding: 5px;
-    border-radius: 50px;
+    border-radius: 2vh;
     width: 100%;
     margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .ttl h3 {

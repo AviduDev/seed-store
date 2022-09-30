@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* --------------------HERO-------------------- */}
+        {/* --------------------HERO------------------ */}
 
         <section className={styles.hero}>
           <Hero />
