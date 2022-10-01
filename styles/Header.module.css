@@ -1,16 +1,37 @@
 .main {
-    position: sticky;
-    bottom: 10px;
+    /* position: sticky;
+    bottom: 10px; */
     background-color: #252525;
     color: white;
     border-radius: 3px;
-    padding: 5px;
+    padding: 2vh;
     margin: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center; */
+    /* max-width: 600px; */
 }
 
 .nav-price {
     text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    bottom: 10px;
+    max-width: ;
+}
+
+/* .item {
+    margin: 2vh;
+} */
+
+.nav_ctn {
+    display: flex;
+    align-items: center;
+
 }

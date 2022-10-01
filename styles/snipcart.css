@@ -1,0 +1,8 @@
+.nav-price {
+    cursor: pointer;
+    margin-left: 1vh;
+    background-color: #252525;
+    color: white;
+    padding: 2vh;
+    border-radius: 3px;
+}

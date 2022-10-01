@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import Layout from "../components/Layout";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
+import "../styles/snipcart.css"
+
 
 function MyApp({ Component, pageProps, router }) {
   return (

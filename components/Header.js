@@ -1,28 +1,41 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import Link from "next/link";
-import styles from "../styles/Header.module.css"
+import styles from "../styles/Header.module.css";
 
 export default function Header() {
   return (
-    <nav className={styles.main}>
-      <Link href={"/"}>
-        <a>
+    <div className={styles.container}>
+      <nav className={styles.nav_ctn}>
+        <div className={styles.main}>
           <div>
-            <p>
-            ⌂
-            </p>
+            <Link href={"/"}>
+              <a>
+                <div>
+                  <p>⌂HOME</p>
+                </div>
+              </a>
+            </Link>
           </div>
-        </a>
-      </Link>
-      <Link href={"/products"}>
-        <a>Seeds</a>
-      </Link>
 
-    
-      <div className="nav-price snipcart-checkout">
-        <div>🛒</div>
-        <div className="snipcart-total-price">$0.00</div>
-      </div>
-    </nav>
+          <div>
+            <Link href={"/products"}>
+              <a>Seeds</a>
+            </Link>
+          </div>
+
+          <div>
+            <Link href={"/contact"}>
+              <a>contact us</a>
+            </Link>
+          </div>
+        </div>
+        
+          <div className="nav-price snipcart-checkout">
+            {/* <div>cart</div> */}
+            <div className="snipcart-total-price">$0.00</div>
+          </div>
+  
+      </nav>
+    </div>
   );
 }

@@ -3,7 +3,7 @@ import styles from "../styles/Services.module.css";
 export default function Services() {
   return (
     <div>
-      <h2>WHAT YOU GET</h2>
+      <h2 className={styles.h2}>WHAT YOU GET</h2>
       <div className={styles.srv_ctn}>
         <div className={styles.srv_ttl}>
           <h3 className={styles.title}>SEEDS</h3>

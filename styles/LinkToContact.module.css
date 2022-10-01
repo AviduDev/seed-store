@@ -17,12 +17,14 @@
 }
 
 .btn {
+    font-weight: 900;
+    font-size: 2.5vh;
     border: none;
-    padding: 1vh;
+    margin: 1vh;
+    padding: 2vh;
+    border-radius: 50px;
+    cursor: pointer;
     font-family: "archivo";
-    font-weight: 800;
-    font-size: 2vh;
-    border-radius: 25px;
     background-color: #D0FF85;
     color: #006400;
 }
@@ -49,6 +51,9 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .ctn {
-        max-width: 40vw;
+        max-width: 60vw;
+    }
+    .ttl {
+        font-size: 8vh;
     }
 }

@@ -23,32 +23,32 @@ export default function Home() {
       <main className={styles.main}>
         {/* --------------------HERO------------------ */}
 
-        <section className={styles.hero}>
+        <section className="hero">
           <Hero />
         </section>
 
         {/* --------------------SERVICES-------------------- */}
 
-        <section>
+        <section className="services">
           <Services />
         </section>
 
         {/* --------------------POPULAR PRODUCTS-------------------- */}
 
-        <section>
+        <section className="categories">
           <Popular />
         </section>
 
         {/* --------------------WHY US-------------------- */}
 
-        <section>
+        <section className="whyus">
           <WhyUs />
         </section>
 
         {/* --------------------HOW IT WORKS-------------------- */}
 
-        <section>
-          <h2>follow order</h2>
+        <section className="order">
+          <h2 className="order_ttl">how it works</h2>
           <HowItWorks
             title="1. order required seeds"
             content="this is content 1"
@@ -70,14 +70,14 @@ export default function Home() {
 
         {/* --------------------LINK TO CONTACT PAGE-------------------- */}
 
-        <section>
+        <section className="linktocontact">
           <LinkToContact />
         </section>
 
         {/* --------------------FAQS-------------------- */}
 
-        <section>
-          <h2>faqs</h2>
+        <section className="faqs">
+          <h2 className="faqs_ttl">faqs</h2>
             <Faqs />
         </section>
       </main>

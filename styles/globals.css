@@ -44,3 +44,47 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.services {
+  margin-top: 10vw;
+}
+
+.categories {
+  margin-top: 10vw;
+}
+
+.whyus {
+  margin-top: 10vw;
+}
+
+.order {
+  margin-top: 10vw;
+}
+
+.linktocontact {
+  margin-top: 10vw;
+}
+
+.faqs {
+  margin-top: 10vw;
+}
+
+.order_ttl {
+  font-size: 5vh;
+}
+
+@media (min-width: 1200px) {
+  .order_ttl {
+      font-size: 8vh;
+  }
+}
+
+.faqs_ttl {
+  font-size: 5vh;
+}
+
+@media (min-width: 1200px) {
+  .faqs_ttl {
+    font-size: 8vh;
+  }
+}

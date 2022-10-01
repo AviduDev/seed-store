@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-items: center;
     background-color: #D0FF85;
-    border-radius: 2vh;
+    border-radius: 2vw;
     margin: 10px;
     color: #006400;
 }
@@ -22,7 +22,7 @@
 .title {
     padding: 0;
     margin: 0;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -30,7 +30,8 @@
 .srv_ttl {
     background-color: #006400;
     color: #D0FF85;
-    border-radius: 2vh;
+    border-radius: 2vw;
+    transform: rotate(-180deg);
 }
 
 /*---------------START WITH MOBILE FIRST--------------------*/
@@ -66,5 +67,7 @@
     .title {
         font-size: 5vh;
     }
-    
+    .h2 {
+        font-size: 8vh;
+    }
 }

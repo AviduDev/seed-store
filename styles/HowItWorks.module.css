@@ -6,4 +6,11 @@
     .main {
         max-width: 60vw;
     }
+    .ttl {
+        font-size: 8vh;
+    }
+}
+
+.ttl {
+    font-size: 5vh;
 }

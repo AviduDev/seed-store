@@ -1,13 +1,13 @@
 .main {
     background-color: #D0FF85;
-    border-radius: 2vh;
+    border-radius: 2vw;
     padding: 10px;
     margin: 10px;
 }
 
 .title {
     background-color: #006400;
-    border-radius: 2vh;
+    border-radius: 2vw;
     color: #D0FF85;
     padding: 5px;
     text-align: center;
@@ -42,5 +42,9 @@
 @media (min-width: 1200px) {
     .main {
         max-width: 50vw;
+    }
+
+    .title h2 {
+        font-size: 8vh;
     }
 }
