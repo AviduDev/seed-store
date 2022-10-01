@@ -25,7 +25,7 @@ export default function Header() {
 
           <div>
             <Link href={"/contact"}>
-              <a>contact us</a>
+              <a>contact</a>
             </Link>
           </div>
         </div>
