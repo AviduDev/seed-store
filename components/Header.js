@@ -11,7 +11,7 @@ export default function Header() {
             <Link href={"/"}>
               <a>
                 <div>
-                  <p>⌂HOME</p>
+                  <p>HOME</p>
                 </div>
               </a>
             </Link>
