@@ -3,9 +3,9 @@ import styles from "../../styles/contact.module.css";
 export default function Contact() {
   return (
     <div>
-      <main>
+      <main className={styles.main}>
         <h1>reach us</h1>
-        <div>
+        <div className={styles.para}>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt magni
             tenetur laborum neque optio earum fuga maiores facere, quam
@@ -23,13 +23,13 @@ export default function Contact() {
             action="https://formsubmit.co/avidu97@gmail.com"
             method="post"
           >
-            <input type="text" name="name" required placeholder="Your Name" />{" "}
+            <input type="text" name="name" required placeholder="Your Name*" />{" "}
             <br />
             <input
               type="email"
               name="email"
               id="email"
-              placeholder="Your E-mail"
+              placeholder="Your E-mail*"
               required
             />{" "}
             <br />
@@ -45,10 +45,7 @@ export default function Contact() {
               name="subject"
               placeholder="Subject"
             /> <br />{" "}
-            <textarea
-              name="message"
-              placeholder="Your Message"
-            ></textarea>
+            <textarea name="message" required placeholder="Your Message*"></textarea>
             <br />
             <button type="submit">Send</button>
             <input

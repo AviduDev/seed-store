@@ -1,12 +1,144 @@
 .frm input {
-    margin: 0.5vh 0 0.5vh 0;
-    
+  margin: 0.5vh 0 0.5vh 0;
 }
 
 .frm textarea {
-    margin: 0.5vh 0 0.5vh 0;
+  margin: 0.5vh 0 0.5vh 0;
 }
 
 .frm {
-    margin: 1vh;
+  margin: 4vh;
+}
+
+.main {
+  background-color: #d0ff85;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.para {
+  max-width: 750px;
+  background-color: #006400;
+  color: #d0ff85;
+  font-weight: 900;
+  font-size: 4vh;
+  border-radius: 2vw;
+  padding: 1.5vh;
+  margin: 1vh;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 8vh;
+  font-family: "Archivo", sans-serif;
+  font-weight: 900;
+  margin: 3vh;
+  color: #006400;
+}
+
+.frm input:focus {
+    color: #006400;
+    font-family: "Archivo";
+    font-size: 2vh;
+    background-color: #d0ff85;
+    border: solid 5px #006400;
+}
+
+.frm input:active {
+    color: #006400;
+    font-family: "Archivo";
+    font-size: 2vh;
+    background-color: #d0ff85;
+}
+
+.frm input {
+    color: #d0ff85;
+    font-family: "Archivo";
+    font-size: 2vh;
+    background-color: #006400;
+}
+
+.frm textarea {
+    color: #d0ff85;
+    font-family: "Archivo";
+    font-size: 2vh;
+    background-color: #006400;
+}
+
+
+.frm textarea:active {
+    color: #006400;
+    font-family: "Archivo";
+    font-size: 2vh;
+    background-color: #d0ff85;
+}
+
+.frm textarea:focus {
+    color: #006400;
+    font-family: "Archivo";
+    font-size: 2vh;
+    background-color: #d0ff85;
+    border: solid 5px #006400;
+}
+
+.frm input {
+    background-color: #006400;
+    border: none;
+    outline: none;
+    padding: 2vh;
+    border-radius: 2vw;
+    width: 100%;
+}
+
+.frm textarea {
+    background-color: #006400;
+    border: none;
+    outline: none;
+    padding: 2vh;
+    border-radius: 2vw;
+    width: 100%;
+}
+
+.frm ::placeholder {
+    font-family: "Archivo";
+    font-size: 2vh;
+    color: #d0ff85;
+    text-align: center;
+}
+
+.frm {
+    width: 500px;
+    max-width: 500px;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.frm button {
+        font-weight: 900;
+        font-size: 2.5vh;
+        border: none;
+        margin: 1vh;
+        padding: 2vh;
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: "archivo";
+        background-color:#006400 ;
+        color: #d0ff85;
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .frm {
+        width: 90vw;
+    }
 }
