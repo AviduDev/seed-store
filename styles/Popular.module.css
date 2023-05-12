@@ -20,6 +20,7 @@
     height: 40vw;
     background-color: #D0FF85;
     border-radius: 2vw;
+    padding: 1rem;
 }
 
 .lin {
@@ -44,6 +45,16 @@
     text-align: center;
     font-size: 3vh;
     padding: 1vh;
+}
+
+
+
+.ctimg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
 }
 
 

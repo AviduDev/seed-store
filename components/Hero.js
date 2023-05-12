@@ -8,8 +8,9 @@ export default function Hero() {
       <div className={styles.hero}>
         <div className={styles.img}>
           <Image
-            src="https://res.cloudinary.com/avidu/image/upload/v1662271407/pexels-lukas-942732-removebg-preview_vtf87q.png"
+            src="https://res.cloudinary.com/avidu/image/upload/v1683871827/Group_1_wqmwjw.png"
             layout="fill"
+            className={styles.heroImg}
             alt=""
           ></Image>
         </div>

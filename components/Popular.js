@@ -8,7 +8,8 @@ export default function Popular() {
       <div className={styles.ctn}>
         <div className={styles.img}>
           <Image
-            src="https://res.cloudinary.com/avidu/image/upload/v1662271407/pexels-lukas-942732-removebg-preview_vtf87q.png"
+            className={styles.ctimg}
+            src="https://res.cloudinary.com/avidu/image/upload/v1683872543/pexels-kenneth-3020635_v1ciij.jpg"
             layout="fill"
             alt=""
           ></Image>
@@ -25,7 +26,8 @@ export default function Popular() {
       <div className={styles.ctn}>
         <div className={styles.img}>
           <Image
-            src="https://res.cloudinary.com/avidu/image/upload/v1662271407/pexels-lukas-942732-removebg-preview_vtf87q.png"
+            className={styles.ctimg}
+            src="https://res.cloudinary.com/avidu/image/upload/v1683872543/pexels-pixabay-53494_auit1o.jpg"
             layout="fill"
             alt=""
           ></Image>
@@ -42,7 +44,8 @@ export default function Popular() {
       <div className={styles.ctn}>
         <div className={styles.img}>
           <Image
-            src="https://res.cloudinary.com/avidu/image/upload/v1662271407/pexels-lukas-942732-removebg-preview_vtf87q.png"
+            className={styles.ctimg}
+            src="https://res.cloudinary.com/avidu/image/upload/v1683872543/pexels-rov-camato-699963_iqlvfj.jpg"
             layout="fill"
             alt=""
           ></Image>
@@ -59,7 +62,8 @@ export default function Popular() {
       <div className={styles.ctn}>
         <div className={styles.img}>
           <Image
-            src="https://res.cloudinary.com/avidu/image/upload/v1662271407/pexels-lukas-942732-removebg-preview_vtf87q.png"
+            className={styles.ctimg}
+            src="https://res.cloudinary.com/avidu/image/upload/v1683872543/pexels-sharon-hoo-6349701_qeato7.jpg"
             layout="fill"
             alt=""
           ></Image>
